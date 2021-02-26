@@ -48,7 +48,10 @@ class file_search:
 if __name__ == "__main__":
     #    creating object
     object_search = file_search()
-    #  Enter the input string to search
-    string = input("enter a string to search: ")
-    #   Searching the required string
-    object_search.search_word(string)
+    # Enter the number of words count to search
+    search_count = int(input("enter words count to search: "))
+    for s in range(search_count):
+        #  Enter the input string to search
+        string = input("enter a string to search: ")
+        #   Searching the required string
+        object_search.search_word(string)
